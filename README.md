@@ -6,8 +6,10 @@ there are 1 directory and 2 files in gameproject.
 gameproject:
 Directory: play
 Files:
- 1.login.php
+
+1.login.php
   the code of it:
+```php
 // File: gameproject/login.php
 
 error_reporting(0);
@@ -46,10 +48,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <p>Don't have an account? <a href="sign-up.php">Sign up here</a>.</p>
 </body>
 </html>
-
-
+```
+ 
  2.sign-up.php
  the code of it is:
+```php
 <php error_reporting(0);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -94,12 +97,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <p>Already have an account? <a href="login.php">Login here</a>.</p>
 </body>
 </html>
-
+```
 
 in the play directory there are 2 files:
 gameproject/play:
  1.main.php
  the code of it is:
+```php
 // File: gameproject/play/main.php
 
 error_reporting(0);
@@ -136,9 +140,12 @@ $empire_names = ["1" => "Egyptians", "2" => "Romans", "3" => "Persians", "4" => 
   <p><a href="message.php">Message</a></p>
 </body>
 </html>
+```
+
 
  2.message.php
  the code of it is:
+```php
 // File: gameproject/play/message.php
 
 error_reporting(0);
@@ -193,4 +200,4 @@ $messages = $users[$username]["messages"];
   </form>
 </body>
 </html>
-
+```
